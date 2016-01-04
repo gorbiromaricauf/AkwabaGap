@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>AkwabaCi2</title>
+	<link rel="stylesheet" href="resources/css/app.css" type="text/css">
+    <style type="text/css"> 
+        /** 
+        * Example of an initial loading indicator.
+        * It is recommended to keep this as minimal as possible to provide instant feedback
+        * while other resources are still being loaded for the first time
+        */                          
+        html, body {   
+            height: 100%;  
+            background-color: #1985D0; 
+        }
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8 
+            }
+        }
+		img.photo{float:left; width:100px; height:100px; margin:0 8px 16px 0;border:1px solid #ccc;-webkit-box-shadow:0 2px 4px #777}
+
+		#categorie{height:85px;}
+		img.photo{float:left; width:80px; height:80px; margin:0 8px 16px 0;border:1px solid #ccc;-webkit-box-shadow:0 2px 4px #777}
+		.menuCss img{float:left; width:20px; height:20px; margin:0 8px 16px 0;border:1px solid #ccc;-webkit-box-shadow:0 2px 4px #777}
+		.detail div{margin:0 8px 16px 0;border:1px solid #ccc;-webkit-box-shadow:0 2px 2px #777; font-weight:bold}
+		.detail div span{font-size:16px; line-height:8px;text-align:justify;font-weight:normal;}
+		@media all and (max-width:240px) {
+		        #categorie{height:55px;}
+				.lieux{font-size:12px;}          
+				.lieux small{font-size:10px;}    
+				img.photo{float:left; width:50px; height:50px; margin:0 8px 16px 0;border:1px solid #ccc;-webkit-box-shadow:0 2px 4px #777}
+				.detail div{margin:0 8px 16px 0;border:1px solid #ccc;-webkit-box-shadow:0 2px 4px #777; font-weight:bold}
+		       .detail div span{font-size:16px; line-height:8px;text-align:justify;font-weight:normal;}
+
+		}          
+    </style>
+	
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+	<script type="text/javascript" src="touch/sencha-touch.js"></script>
+    <script id="microloader" type="text/javascript" src="app.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

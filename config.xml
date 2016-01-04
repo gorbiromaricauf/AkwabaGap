@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.dreamteck.akwaba"
+    version   = "1.0.6">
+
+<name>Akwaba CI</name>
+
+<description>
+Akwaba CI est une page jaune qui vous offre la liste de tous les points d'intérêt, leur contact, leur adresses et localication. Vous avez à porté de main tous les endroits utiles dans votre quotidien. Bars, Hotels, Restaurants, ATM,  etc
+</description>
+
+<author href="www.dreamteck.org" email="gorbiromaric@gmail.com">
+Dream teck Entreprise
+</author>
+<icon src="geolocation.png" />
+<icon src="geolocation.png" gap:platform="android" gap:qualifier="ldpi" />
+<gap:splash src="demarrage_portrait.jpg" />
+<gap:splash src="demarrage_portrait.jpg" gap:platform="android" gap:qualifier="port-xxhdpi" />
+<gap:splash src="dreamtecklogo.jpg" gap:platform="android" gap:qualifier="land-xxhdpi" />
+<gap:splash src="dreamtecklogo.jpg" gap:platform="winphone" />
+<gap:splash src="dreamtecklogo.jpg" gap:platform="ios" width="320" height="480" />
+<access origin="*" />
+</widget>
